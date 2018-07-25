@@ -1,13 +1,58 @@
-  
-.topnav a {
-  color: #69696a;
-  text-decoration: none;
-  position: relative;
-  top: 50px;
-  left: 900px;
-  padding: 5px;
 
+
+body {
+  font-family: "Open Sans", san-serif;
+  line-height: 1.6;
+  margin: 30px;
+  min-height: 100vh;
+  background-color: #f9fafc;
+}
+
+.words {
+  display: flex;
+  justify-content:space-around;
+  max-width:500px;
+  margin-left: 30px;
+  margin-top: -140px;
+  p {
+    width: 200px;
+    text-align: center;
+    color: #69696a;
+    }
   }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  margin:0;
+  font-size: 1.45em;
+}
+
+.main-nav {
+  margin-top: 5px;
+}
+
+.logo a,
+.main-nav a {
+  padding: 10px 15px;
+  text-align: center;
+  display: block;
+  color: #69696a;
+  }
+
+.main-nav a {
+  color: #69696a;
+  font-size: .99em
+}
+
 .hireUs {
   border: 1px solid black;
   background-color: #000;
@@ -15,19 +60,12 @@
 }
 
 .vl {
-  border-left: 3px solid grey;
-  height: 100px;
-  position: absolute;
+  border-left: 3px solid gray;
+  height: 120px;
+  position: relative
   left:-5px;
   margin-left: -3px;
-  top: 200px;
-}
-
-h6 {
-  font-size: 16px;
-  position: relative;
-  top:-5px;
-  left:20px;
+  top: 150px;
 }
 
 h1 {
@@ -36,25 +74,15 @@ h1 {
  top:10px;
  left: 2px;
 }
-body {
-  font-family: "Open Sans", san-serif;
-  font-size: 16px;
-  font-weight: 800;
-  color: #69696a;
-  background-color:#f9fafc; 
-  padding: 10px;
-  position: relative;
-  left: 90px;
 
-}
 .circle1 {
-  height: 140px;
-  width: 140px; 
+  height: 143px;
+  width: 143px; 
   border-radius: 50%;
   background-color: rgba(207, 130, 213, 0.6);
   position: relative;
-  top: 10px;
-  left: 1020px;
+  top: -86px;
+  left: 820px;
 }
 .circle2 {
   height: 170px;
@@ -62,8 +90,8 @@ body {
   border-radius: 50%;
   background-color: rgba(247, 193, 162, 0.7);
   position: relative;
-  top: -10px;
-  left: 985px;
+  top: -110px;
+  left: 785px;
 }
 
 .circle3 {
@@ -72,23 +100,48 @@ body {
   border-radius:50%;
   background-color:rgba(247, 136, 167, 0.6);
   position: relative;
-  bottom: 330px;
-  left: 785px;
-}
-
-a{
-  position: absolute;
-  bottom: 20px;
-  left: 10%;
+  bottom: 430px;
+  left: 585px;
 }
 
 .scroll {
   color: #69696a;
-  text-decoration: none;
-  bottom: 20%;
+  background: #000;
+  border-radius: 28px;
+  width: 60px;
+  text-align: center;
+  position: relative;
   left: 50%;
-  padding: 8px;
-  border: 1px solid black;
-  background-color: #000;
-  border-radius: 25px;
+  top: 250px;
+
 }
+
+@media (min-width: 769px) {
+  .header,
+  .main-nav {
+    display: flex;
+}
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+      .header{
+	width: 80%;
+	margin: 0 auto;
+	max-width: 1150px;
+     }
+     }
+
+}
+
+@media (min-width: 1025px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+	}
+
+}
+
+
+
+
